@@ -1,5 +1,16 @@
-import { SignUp } from '@clerk/nextjs'
+import { ClerkLoaded, ClerkLoading, SignUp } from '@clerk/nextjs'
 
-export default function Page() {
-  return <SignUp />
+const SignUpPage = () => {
+  return (
+    <div className="flex h-screen w-screen items-center justify-center bg-gray-800 text-white/60">
+      <ClerkLoading>
+        <div>Loading...</div>
+      </ClerkLoading>
+      <ClerkLoaded>
+        <SignUp />
+      </ClerkLoaded>
+    </div>
+  )
 }
+
+export default SignUpPage
