@@ -7,7 +7,14 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        pastelPink: '#fddde6',
+        pastelGreen: '#ccf2f4',
+        pastelBlue: '#a6c1ee',
+        pastelYellow: '#fdfd96',
+      },
+    },
   },
   plugins: [],
 }
